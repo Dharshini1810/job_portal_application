@@ -1,0 +1,53 @@
+<h1 class="text-center mt-5">Create Job Post</h1>
+<form class="container pb-5" style="width: 30rem;" method="post" action="">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Job Id</label>
+    <input type="text" class="form-control" name="id">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Job Title</label>
+    <input type="text" class="form-control" name="title">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Location</label>
+    <input type="text" class="form-control" name="location">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Job Type</label>
+    <select class="form-control" name="type">
+      <option value="Full-Time">Full-Time</option>
+      <option value="Internship">Internship</option>
+      <option value="Apprenticeship">Apprenticeship</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Description</label>
+    <textarea type="text" class="form-control" name="description"></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Experience</label>
+    <select class="form-control" name="experience">
+      <option value="0-1 years">0-1 years</option>
+      <option value="1-2 years">1-2 years</option>
+      <option value="2-3 years">2-3 years</option>
+      <option value="3-4 years">3-4 years</option>
+      <option value="4-5 years">4-5 years</option>
+      <option value="5 years and above">5 years and above</option>
+      <option value="No experience required">No experience required</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Requirements</label>
+    <textarea type="" class="form-control" name="reqmnts"></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Skills</label>
+    <textarea type="skills" class="form-control" name="skills"></textarea>
+  </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Last Day to Apply</label>
+        <input type="date" class="form-control" name="lastday">
+    </div>
+  <button type="submit" class="btn btn-dark">Submit</button>
+  <h5 class="mt-3 text-bold">{{alertmsg}}</h5>
+</form>
