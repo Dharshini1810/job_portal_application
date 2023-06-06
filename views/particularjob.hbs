@@ -1,0 +1,43 @@
+<div class="container">
+    <br>
+    {{#each data}}
+        {{#if jobId}}
+            <h4 class="text-center" style="font-weight: bolder;">Job Id: {{jobId}}</h4>
+            <br>
+        {{/if}}    
+        {{#if title}}
+            <br>
+            <h5><span style="font-weight: bolder;">Title: </span>{{title}}</h5>
+            <br>
+        {{/if}}
+        {{#if location}}
+            <h5><span style="font-weight: bolder;">Location: </span>{{location}}</h5>
+            <br>
+        {{/if}}
+        {{#if jobType}}
+            <h5><span style="font-weight: bolder;">Job Type: </span>{{jobType}}</h5>
+            <br>
+        {{/if}}
+        {{#if description}}
+            <h5><span style="font-weight: bolder;">Description: </span>{{description}}</h5>
+            <br>
+        {{/if}}
+        {{#if experience}}
+            <h5><span style="font-weight: bolder;">Experience: </span>{{experience}}</h5>
+            <br>
+        {{/if}}
+        {{#if requirements}}
+            <h5><span style="font-weight: bolder;">Requirements: </span>{{requirements}}</h5>
+            <br>
+        {{/if}}
+        {{#if skills}}
+            <h5><span style="font-weight: bolder;">Skills: </span>{{skills}}</h5>
+            <br>
+        {{/if}}
+        {{#if lastDate}}
+            <h5><span style="font-weight: bolder;">Last Date To Apply: </span>{{lastDate}}</h5>
+            <br>
+            <br>
+        {{/if}}
+    {{/each}}
+</div>

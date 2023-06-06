@@ -71,7 +71,9 @@ exports.getParticularIdData = async (req, res, jobId) => {
             return res.status(404).json({ message: 'Job not found' });
         }      
         // Return the job details as a JSON response
-        res.json(data);
+        res.render('./particularjob',{
+          data: data 
+        });
     }catch (error) {
         // console.log(error)
         res.status(500).json({ message: error });
